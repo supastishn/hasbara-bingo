@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+#generateBtn {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.bingo-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  grid-gap: 5px;
+  justify-content: center;
+}
+
+.bingo-cell {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  border: 2px solid #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.bingo-cell.free {
+  background: #ffeb3b;
+}
