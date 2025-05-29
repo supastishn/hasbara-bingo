@@ -1,10 +1,10 @@
- // Word bank for the Bingo card (add as many as you like; must be ≥24)
+ // Word bank of commonly used Hasbara (pro-Israel) terms (must be ≥24)
 const WORDS = [
-  'apple','banana','cherry','date','elderberry',
-  'fig','grape','honeydew','kiwi','lime',
-  'mango','nectarine','orange','papaya','quince',
-  'raspberry','strawberry','tangerine','ugli','vanilla',
-  'watermelon','xigua','yam','zucchini','apricot'
+  'peace','democracy','security','innovation','resilience',
+  'unity','solidarity','heritage','tolerance','coexistence',
+  'sovereignty','freedom','progress','hope','prosperity',
+  'technology','startup','alliance','diaspora','Zionism',
+  'sabra','miracle','defense','partnership','culture'
 ];
 
 // Fisher–Yates shuffle: returns a new shuffled copy
