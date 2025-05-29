@@ -1,35 +1,30 @@
-// Column ranges for B,I,N,G,O
-const COLUMN_RANGES = [
-  { label: 'B', min: 1,  max: 15 },
-  { label: 'I', min: 16, max: 30 },
-  { label: 'N', min: 31, max: 45 },
-  { label: 'G', min: 46, max: 60 },
-  { label: 'O', min: 61, max: 75 }
+ // Word bank for the Bingo card (add as many as you like; must be ≥24)
+const WORDS = [
+  'apple','banana','cherry','date','elderberry',
+  'fig','grape','honeydew','kiwi','lime',
+  'mango','nectarine','orange','papaya','quince',
+  'raspberry','strawberry','tangerine','ugli','vanilla',
+  'watermelon','xigua','yam','zucchini','apricot'
 ];
+
+// Fisher–Yates shuffle: returns a new shuffled copy
+function shuffleArray(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
 
 function generateBingoCard() {
   const container = document.getElementById('bingoCard');
-  container.innerHTML = ''; // clear old
+  container.innerHTML = '';  // clear old
 
-  // Create header row
-  COLUMN_RANGES.forEach(col => {
-    const header = document.createElement('div');
-    header.className = 'bingo-cell';
-    header.textContent = col.label;
-    container.appendChild(header);
-  });
-
-  // Generate numbers per column
-  const columns = COLUMN_RANGES.map(col => {
-    const nums = [];
-    while (nums.length < 5) {
-      const n = Math.floor(Math.random() * (col.max - col.min + 1)) + col.min;
-      if (!nums.includes(n)) nums.push(n);
-    }
-    return nums;
-  });
-
-  // Build 5×5 grid; center cell is FREE
+  // Shuffle and pick words (we need 24 + one FREE)
+  const pool = shuffleArray(WORDS);
+  let index = 0;
+  // Build a 5×5 grid; center is FREE
   for (let row = 0; row < 5; row++) {
     for (let col = 0; col < 5; col++) {
       const cell = document.createElement('div');
@@ -38,7 +33,7 @@ function generateBingoCard() {
         cell.classList.add('free');
         cell.textContent = 'FREE';
       } else {
-        cell.textContent = columns[col][row];
+        cell.textContent = pool[index++];
       }
       container.appendChild(cell);
     }
