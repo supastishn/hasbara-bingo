@@ -31,7 +31,7 @@ function generateBingoCard() {
       cell.className = 'bingo-cell';
       if (row === 2 && col === 2) {
         cell.classList.add('free');
-        cell.textContent = 'FREE';
+        cell.textContent = 'Hamas did it (FREE)';
       } else {
         cell.textContent = pool[index++];
       }
