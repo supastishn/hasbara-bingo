@@ -1,9 +1,9 @@
  // Word bank of commonly used Hasbara (pro-Israel) terms (must be ≥24)
 const WORDS = [
-  'not a genocide','only democracy in the middle east','necesarry for security','israeli invention','resilience',
+  'not a genocide','only democracy in the middle east','necesarry for security','israeli invention','ok but what about ___	',
   '______ is a biased source','solidarity','indigenous (we lived there 3400 y. ago)','tolerance','2 state solution',
   'threatens israeli sovereignty','freedom','terrorist','its good apartheid','prosperity',
-  'hamas','multicultural','alliance','diaspora','Zionism',
+  'hamas','israel is multicultural (minorities living in apartheid:)','alliance','diaspora','UN is anti semetic',
   'we investigated ourselves & found no evidence','trust bibi, no coi ;)','not a genocide','arabs did ____','arabs, not palestinians'
 ];
 
