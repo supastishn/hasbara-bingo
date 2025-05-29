@@ -1,10 +1,10 @@
  // Word bank of commonly used Hasbara (pro-Israel) terms (must be ≥24)
 const WORDS = [
-  'peace','democracy','security','innovation','resilience',
-  'unity','solidarity','heritage','tolerance','coexistence',
-  'sovereignty','freedom','progress','hope','prosperity',
-  'technology','startup','alliance','diaspora','Zionism',
-  'sabra','miracle','defense','partnership','culture'
+  'not a genocide','only democracy in the middle east','necesarry for security','israeli invention','resilience',
+  '______ is a biased source','solidarity','indigenous (we lived there 3400 y. ago)','tolerance','2 state solution',
+  'threatens israeli sovereignty','freedom','terrorist','its good apartheid','prosperity',
+  'hamas','multicultural','alliance','diaspora','Zionism',
+  'we investigated ourselves & found no evidence','trust bibi, no coi ;)','not a genocide','arabs did ____','arabs, not palestinians'
 ];
 
 // Fisher–Yates shuffle: returns a new shuffled copy
